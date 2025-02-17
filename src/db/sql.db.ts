@@ -6,7 +6,7 @@ const dataSource: TypeOrmModuleOptions = {
   port: 3306,
   username: 'root',
   password: '@8P20pm0133',
-  database: 'stock',
+  database: 'sys',
   entities: [__dirname + '/../**/*.entity{.ts,.js}'],
   synchronize: true,
 };
