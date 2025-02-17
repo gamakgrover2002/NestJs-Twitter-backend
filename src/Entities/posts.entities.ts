@@ -10,7 +10,7 @@ export class Post {
     
     @Column()
     content: string;
-    
-    @CreateDateColumn({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
-    createdAt: Date;
+   @Column()
+
+  createdBy: string;
 }

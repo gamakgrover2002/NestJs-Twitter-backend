@@ -1,4 +1,6 @@
 import { TypeOrmModuleOptions } from '@nestjs/typeOrm'
+import {User} from '../Entities/users.entity';
+import {Post} from "../Entities/posts.entities"
 
 const dataSource: TypeOrmModuleOptions = {
   type: 'mysql',
@@ -7,7 +9,7 @@ const dataSource: TypeOrmModuleOptions = {
   username: 'root',
   password: '@8P20pm0133',
   database: 'stock',
-  entities: ['dist/**/*.entity{.ts,.js}'],
+  entities: [Post,User],
   migrations: ['dist/db/migrations/*{.ts,.js}'],
   synchronize: true,
 };
